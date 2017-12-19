@@ -12,5 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('connexion');
 });
+Route::get('/admin', function () {
+    return view('accueilAdmin');
+});
+Route::get('/client', function () {
+    return view('reportingClient');
+});
+Route::get('/admin/reporting', function () {
+    return view('reportingAdmin');
+});
+Route::get('/admin/action', function () {
+    return view('actionAdmin');
+});
+Route::get('/client/action', function () {
+    return view('actionClient');
+});
+
+
+
+
